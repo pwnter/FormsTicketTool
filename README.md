@@ -74,7 +74,7 @@ FormsTicketTool.exe encrypt 8CE190CA4584C2E0... admin "Administrators" 120
 
 ## Config Example
 
-`App.config.template` (rename to `App.config` for actual run):
+Pop the **machineKey** into `App.config.template` (rename to `App.config` for actual run):
 
 ```xml
 <configuration>
@@ -83,8 +83,7 @@ FormsTicketTool.exe encrypt 8CE190CA4584C2E0... admin "Administrators" 120
       decryption="AES"
       decryptionKey="B26C371E..."
       validation="HMACSHA256"
-      validationKey="EBF9076B..."
-      compatibilityMode="Framework45" />
+      validationKey="EBF9076B..." />
   </system.web>
 </configuration>
 ```
