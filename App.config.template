@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.web>
+    <!-- Replace with target machineKey before running -->
+    <machineKey 
+      decryption="AES"
+      decryptionKey="PUT_DECRYPTIONKEY_HEX_HERE"
+      validation="HMACSHA256"
+      validationKey="PUT_VALIDATIONKEY_HEX_HERE"
+      compatibilityMode="Framework45" />
+  </system.web>
+</configuration>
