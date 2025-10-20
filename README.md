@@ -16,7 +16,9 @@ A small Windows tool for decrypt/encrypt/create cookie "sessions" (`FormsAuthent
 - .NET Framework 4.8
 - Add reference: `System.Web`
 
-**Steps**
+> Prefer using Visual Studio for a single-click build.
+
+Or **manual build steps**
 
 1. Clone the repo:
    ```bash
@@ -49,10 +51,16 @@ FormsTicketTool.exe info
 Prints:
 
 - default: TTL and local timestamps
+
 - `--json` (optional): machine-friendly JSON
+
+  ```json
+  {"version":1,"name":"john.doe","issued":"2025-10-20T19:46:10.3973725+08:00","expires":"2025-10-20T19:56:10.3973725+08:00","persistent":true,"userdata":"Vistor","cookiePath":"/"}
+  ```
+
 - `--utc`  (optional): show timestamps in UTC instead of local
 
-Examples:
+Usage examples:
 
 ```sh
 # decrypt a cookie string
