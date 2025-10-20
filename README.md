@@ -16,9 +16,7 @@ A small Windows tool for decrypt/encrypt/create cookie "sessions" (`FormsAuthent
 - .NET Framework 4.8
 - Add reference: `System.Web`
 
-> Prefer using Visual Studio for a single-click build.
-
-Or **manual build steps**
+**Steps**:
 
 1. Clone the repo:
    ```bash
@@ -26,13 +24,13 @@ Or **manual build steps**
    cd FormsTicketTool
    ```
 
-2. Open `FormsTicketTool.sln` in Visual Studio or compile manually:
+2. Open `FormsTicketTool.sln` in **Visual Studio** with a single-click build, or compile manually:
 
    ```
    csc /r:System.Web.dll FormsTicketTool.cs
    ```
 
-3. Copy `App.config.template` → `App.config`. Insert your target machineKey:
+3. Copy `App.config.template` → `App.config`. Insert the leaked machineKey.
 
 4. Build → `FormsTicketTool.exe` will appear in `/bin/Debug` or `/bin/Release`.
 
