@@ -3,7 +3,6 @@ obj/
 [Bb]uild/
 [Ll]og/
 TestResults/
-*.exe
 *.dll
 *.pdb
 .vs/
